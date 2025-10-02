@@ -169,7 +169,8 @@ public class Main {
         double number1 = sc.nextDouble();
 
         System.out.println("¿El numero es positivo?" + (number1 >= 0));
-        System.out.println("¿El numero es negativo?" + (number1 < 0));
+        
+        sc.close();
 
 
 
