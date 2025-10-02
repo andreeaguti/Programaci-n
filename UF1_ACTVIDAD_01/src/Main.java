@@ -105,12 +105,51 @@ public class Main {
         System.out.println("Ejercicio 10");
         sc=new Scanner(System.in);
         System.out.println("Introduce primer numero");
-        double Núm1 = sc.nextDouble();
+        double num4 = sc.nextDouble();
         System.out.println("Introduce segundo numero");
-        double Núm2 = sc.nextDouble();
+        double num5 = sc.nextDouble();
         System.out.println("Introduce tercer numero");
-        double Núm3 = sc.nextDouble();
-        double
+        double num6 = sc.nextDouble();
+        double mayor = Math.max(Math.max(num4,num5), num6);
+        System.out.println("El numero mayor es:" + mayor);
+
+        //Ejercicio 11
+        System.out.println("Ejercicio 11");
+        sc=new Scanner(System.in);
+        System.out.println("Introduce el primer numero: ");
+        double numero7 = sc.nextDouble();
+        System.out.println("Introduce el segundo numero: ");
+        double numero8 = sc.nextDouble();
+        double sumaa = numero7 + numero8;
+        double restaa = numero7 - numero8;
+        double multiplicacionn = numero7 * numero8;
+        double divisionn = numero7 / numero8;
+        System.out.println("La suma es: " + suma);
+        System.out.println("La resta es: " + resta);
+        System.out.println("La multiplicacion es: " + multiplicacion);
+        System.out.println("La division es: " + divisionn);
+        System.out.println("Division: no se puede dividir entre cero");
+
+        //Ejercicio 12
+        System.out.println("Ejercicio 12");
+        sc=new Scanner(System.in);
+        System.out.println("Introduce primer numero:");
+        double numeroo1 = sc.nextDouble();
+        System.out.println("Introduce el segundo numero:");
+        double numeroo2 = sc.nextDouble();
+        System.out.println("El numero mayor es:" + Math.max(numeroo1,numeroo2));
+
+        //Ejercicio 13
+        System.out.println("Ejercicio 13");
+        sc=new Scanner(System.in);
+        System.out.println("Introduce un número;");
+        double number1 = sc.nextDouble();
+        System.out.println("¿El numero es positivo?" + (number1 >= 0));
+        System.out.println("¿El numero es negativo?" + (number1 < 0));
+
+
+
+
 
 
 
