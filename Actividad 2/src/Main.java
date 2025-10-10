@@ -13,6 +13,7 @@ public class Main {
             System.out.println("Eres mayor de edad");
         }
 
+
         //Ejercicio 02
         System.out.println("Ejercicio 02");
         sc = new Scanner(System.in);
@@ -108,10 +109,48 @@ public class Main {
         System.out.println("El factorial es:" + factorial);
 
         //Ejercicio 09
+        System.out.println("Ejercicio 09");
+        sc = new Scanner(System.in);
+
+        System.out.println("Introduce la hora: ");
+        int hora = sc.nextInt();
 
 
+        System.out.println("Introduce los minutos: ");
+        int minutos = sc.nextInt();
 
+        System.out.println("Introduce los segundos: ");
+        int segundos = sc.nextInt();
 
+        if (hora < 0 || minutos < 0 || segundos < 0) {
+            System.out.println("Introduce un valor positivo: ");
+        }
+        if (hora >= 24 || minutos >= 60 || segundos >= 60) {
+            System.out.println("Introduce un valor válido: ");
+        }
+        if (segundos == 59) {
+            segundos = 0;
+            minutos = minutos + 1;
+
+        } else {
+            segundos = segundos + 1;
+        }
+        if (minutos == 60) {
+            minutos = 0;
+            hora = hora + 1;
+        } else {
+            hora = hora + 1;
+        }
+        if (hora == 24) {
+            hora = 0;
+        }
+        System.out.println("La hora transcurrido un segundo es:" + hora + ":" + minutos + ":" + segundos);
+
+        //Ejercicio 10
+        System.out.println("Ejercicio 10");
+        sc = new Scanner(System.in);
+
+        System.out.println("Introduce 10 números: ");
 
     }
 }
