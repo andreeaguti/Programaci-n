@@ -3,25 +3,40 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        /** Ejercicio 1:Realiza un programa que dada una cantidad de euros que el usuario introduce por
-         teclado (múltiplo de 5 €) mostrará los billetes de cada tipo que serán necesarios para
-         alcanzar dicha cantidad (utilizando billetes de 500, 200, 100, 50, 20, 10 y 5). Hay que
-         indicar el mínimo de billetes posible. Por ejemplo, si el usuario introduce 145 el
-         programa indicará que será necesario 1 billete de 100 €, 2 billetes de 20 € y 1 billete de
-         5 € (no será válido por ejemplo 29 billetes de 5, que aunque sume 145 € no es el mínimo
-         número de billetes posible).
-         * **/
-        System.out.println("Ejercicio 1");
+
+        /** Realiza un programa que muestre un menú de opciones como el siguiente:
+         1. Sumar
+         2. Restar
+         3. Multiplicar
+         4. Dividir (incluir manejo de división por 0)
+         5. Salir
+         El menú debe de repetirse hasta que se escoja la opción 5 (Salir). **/
+
+        System.out.println("Ejercicio 2");
+
+        double num1 = 0.0, num = 0.0;
         Scanner sc = new Scanner(System.in);
+        String opcion = "5";
+
+        do {
+            System.out.println("1. Sumar");
+            System.out.println("2. Restar");
+            System.out.println("3. Multiplicar");
+            System.out.println("4. Dividir");
+            System.out.println("5. Salir");
+            opcion = sc.nextLine();
+
+            switch (opcion){
+                case "1":
+                    sc = new Scanner(System.in);
+                    System.out.println("Introduce el primer numero");
+                    num1
 
 
-        //Array con billetes disponibles
-        int [] billetes = {500, 200, 100, 50, 20, 10, 5};
-        int[] cantidadBilletes = new int[billetes.length];
+            }
+        } while(!opcion.equals("5"));
 
-        System.out.println("Introduce una cantidad de dinero");
-        int cantidad = new scanner();
 
-        if (cantidad
 
-    }
+
+
